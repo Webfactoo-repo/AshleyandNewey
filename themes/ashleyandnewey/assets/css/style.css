@@ -1,0 +1,1415 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 14px;
+    color: #282828;
+    font-family: 'Open Sans', sans-serif;
+}
+
+::-ms-clear {
+    display: none;
+}
+
+::-ms-reveal{
+    display: none;
+}
+
+:focus {
+    outline: auto 0px -webkit-focus-ring-color!important;
+}
+
+input{
+    outline: none;
+    -webkit-border-radius: 0;
+}
+
+body, html{
+    background: url('pics/body-bg.png') repeat;
+    min-height: 100%;
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.wrap{
+    min-height: 100%;
+}
+
+.container{
+    height: 100%;
+    min-width: 960px;
+    width: 960px;
+    margin: 0 auto;
+    background: url('pics/content-bg-repeat.png') repeat-y left;
+}
+
+.main{
+    width: 710px;
+    float: right;
+}
+
+/* leftbar */
+.leftbar{
+    width: 250px;
+    min-height: 100%;
+    float: left;
+    background: #fcf8f8;
+}
+
+.leftbar.logged{
+    position: fixed;
+}
+
+.leftbar .nav{
+    width: 250px;
+    height: 61px;
+    line-height: 61px;
+    float: left;
+}
+
+.leftbar .nav ul{
+    list-style: none;
+    background: #d41d25 url('pics/nav-ul-bg.png') no-repeat;
+}
+
+.leftbar .nav ul li{
+    float: left;
+    width: 124px;
+    height: 61px;
+    text-align: center;
+}
+
+.leftbar .nav ul > li:first-child{
+    margin-right: 1px;
+    -webkit-transition : all 0.2s linear;
+    -moz-transition : all 0.2s linear;
+    -ms-transition : all 0.2s linear;
+    -o-transition : all 0.2s linear;
+    transition : all 0.2s linear;
+    background: #d41d25 url('pics/nav-ul-left-bg.png') no-repeat top left;
+}
+
+.leftbar .nav ul > li:last-child{
+    margin-left: 1px;
+    -webkit-transition : all 0.2s linear;
+    -moz-transition : all 0.2s linear;
+    -ms-transition : all 0.2s linear;
+    -o-transition : all 0.2s linear;
+    transition : all 0.2s linear;
+    background: #d41d25 url('pics/nav-ul-right-bg.png') no-repeat top left;
+}
+
+.leftbar .nav ul > li.active:first-child, .leftbar .nav ul > li:first-child:hover{
+    background: #d41d25 url('pics/about-us-hover-bg.png') no-repeat;
+    color: #000;
+}
+
+.leftbar .nav ul > li.active:last-child, .leftbar .nav ul > li:last-child:hover{
+    background: #d41d25 url('pics/contact-us-hover-bg.png') no-repeat;
+    color: #000;
+}
+
+.leftbar .nav ul li a{
+    display: inline-block;
+    color: #fcf8f8;
+    text-decoration: none;
+    width: 124px;
+    text-transform: uppercase;
+    -webkit-transition : all 0.2s linear;
+    -moz-transition : all 0.2s linear;
+    -ms-transition : all 0.2s linear;
+    -o-transition : all 0.2s linear;
+    transition : all 0.2s linear;
+}
+
+.leftbar .nav ul li a:hover, .leftbar .nav ul li.active a{
+    color: #000;
+}
+
+.leftbar .login #title{
+    margin: 30px 0 5px 0;
+}
+
+.leftbar .login #title p{
+    text-align: center;
+    color: #d41d25;
+}
+
+.leftbar .login #username{
+    width: 160px;
+    height: 60px;
+    background: #d41d25 url('pics/login-bg.png') no-repeat;
+    padding: 0px 45px;
+    color: #fcf8f8;
+}
+
+.leftbar .login #password{
+    margin-top: 10px;
+    height: 61px;
+    width: 100px;
+    background: url('pics/password-bg.png') no-repeat;
+    float: left;
+    color: #fcf8f8;
+    padding: 0 30px 0 45px;
+}
+
+.leftbar .login #ok{
+    margin-top: 10px;
+    height: 61px;
+    width: 75px;
+    background: url('pics/ok-bg.png') no-repeat;
+    float: left;
+    color: #fcf8f8;
+    padding-left: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    -webkit-transition : all 0.2s linear;
+    -moz-transition : all 0.2s linear;
+    -ms-transition : all 0.2s linear;
+    -o-transition : all 0.2s linear;
+    transition : all 0.2s linear;
+}
+
+.leftbar .login #ok:hover, .leftbar .login #ok.active{
+    background: url('pics/ok-active-bg.png') no-repeat;
+    color: #000;
+}
+
+.leftbar .login nav{
+    width: 250px;
+    margin-top: 5px;
+}
+
+.leftbar .login nav ul{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.leftbar .login nav ul li{
+    float: left;
+}
+
+.leftbar .login nav ul li a{
+    font-size: 11px;
+    text-decoration: none;
+    color: #d41d25;
+    float: left;
+}
+
+.leftbar .login nav ul li a:hover, .leftbar .login nav ul li.active a{
+    text-decoration: underline;
+}
+
+.leftbar .login nav ul em{
+    float: left;
+    width: 1px;
+    margin: 0 5px;
+    height: 15px;
+    background: #d41d25;
+}
+
+.leftbar .message{
+    width: 210px;
+    height: 72px;
+    padding: 10px 20px;
+    text-align: center;
+    color: #d41d25;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.leftbar .logo{
+    width: 154px;
+    height: 179px;
+    background: url('pics/logo.png') no-repeat;
+    margin: 0 auto 0 auto;
+    -webkit-transition : all 0.2s linear;
+    -moz-transition : all 0.2s linear;
+    -ms-transition : all 0.2s linear;
+    -o-transition : all 0.2s linear;
+    transition : all 0.2s linear;
+}
+
+.leftbar .logo:hover{
+    opacity: 0.8;
+}
+
+.leftbar .information{
+    padding: 8px 50px 10px 0;
+    margin-bottom: 20px;
+    background: url('pics/left-information-bg.png') no-repeat center bottom;
+    height: auto;
+}
+
+.leftbar .information p{
+    text-align: right;
+    color: #666666;
+}
+
+.leftbar .developed{
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: relative;
+    top: -285px;
+    left: -145px
+}
+
+.leftbar .developed a{
+    color: #979796;
+    text-decoration: none;
+}
+
+.leftbar .logged-nav{
+    width: 250px;
+}
+
+.leftbar .logged-nav ul{
+    list-style: none;
+    margin-bottom: 90px;
+}
+
+.leftbar .logged-nav ul li{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #d41d25;
+    margin-bottom: 10px;
+}
+
+.leftbar .logged-nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+    width: 250px;
+    color: #fcf8f8;
+    font-size: 15px;
+    -webkit-transition : all 0.2s linear;
+    -moz-transition : all 0.2s linear;
+    -ms-transition : all 0.2s linear;
+    -o-transition : all 0.2s linear;
+    transition : all 0.2s linear;
+}
+
+.leftbar .logged-nav ul li a:hover, .leftbar .logged-nav ul .active a{
+    color: #630808;
+    background: #d41d25 url('pics/logged-menu-li-bg.png') no-repeat;
+}
+
+/* basic page */
+#basic-page .request #reg-input, #basic-page .forgot #for-input{
+    width: 640px;
+    height: 60px;
+    background: #d41d25 url('pics/input-bg.png') no-repeat;
+    margin-top: 115px;
+    padding-left: 70px;
+}
+
+#basic-page .change #change-input{
+    width: 565px;
+    height: 60px;
+    background: #d41d25 url('pics/input2-bg.png') no-repeat;
+    margin-top: 115px;
+    padding-left: 145px;
+}
+
+#basic-page .change #change-input input{
+    background: none;
+    width: 220px;
+    height: 60px;
+    color: #fcf8f8;
+    text-align: center;
+    padding: 0 10px;
+}
+
+#basic-page .request #reg-input input{
+    background: none;
+    width: 188px;
+    height: 60px;
+    color: #fcf8f8;
+    text-align: center;
+    padding: 0 10px;
+}
+
+#basic-page .forgot #for-input input{
+    background: none;
+    width: 190px;
+    height: 60px;
+    color: #fcf8f8;
+    text-align: center;
+    margin-left: 210px;
+    padding: 0 10px;
+}
+
+#basic-page .send{
+    width: 710px;
+    height: 60px;
+    background: #d41d25 url('pics/send-bg.png') no-repeat;
+    margin-top: 10px;
+}
+
+#basic-page .send input{
+    background: none;
+    margin-left: 279px;
+    width: 215px;
+    height: 60px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fcf8f8;
+    font-size: 30px;
+    background: #d41d25 url('pics/send-but-bg.png') no-repeat;
+    -webkit-transition : all 0.2s linear;
+    -moz-transition : all 0.2s linear;
+    -ms-transition : all 0.2s linear;
+    -o-transition : all 0.2s linear;
+    transition : all 0.2s linear;
+}
+
+#basic-page .send input:hover, #basic-page .send input.active{
+    color: #000;
+    background: url('pics/send-active-bg.png') no-repeat;
+}
+
+#basic-page .basic-content{
+    width: 710px;
+    height: 140px;
+    margin-top: 140px;
+    background: #fcf8f8 url('pics/basic-content-bg.png') no-repeat;
+}
+
+#basic-page .basic-content #title{
+    font-size: 40px;
+    margin-left: 65px;
+    padding-top: 5px;
+}
+
+#basic-page .basic-content #content{
+    margin-left: 70px;
+    padding-right: 20px;
+    font-size: 16px;
+    color: #d41d25;
+}
+
+#basic-page .basic-content #content p{
+    color: #d41d25;
+    font-size: 16px;
+}
+
+/*slider page*/
+#img-slider{
+    max-height: 650px;
+    height: 650px;
+    overflow: hidden;
+    display: none;
+}
+
+#slider-page .bg{
+    width: 650px;
+    height: 140px;
+    background: url('pics/body-bg.png') repeat;
+    position: absolute;
+    top:390px;
+    margin-left: 60px;
+    z-index: 1;
+}
+
+#slider-page .rsOverflow{
+    float: right!important;
+}
+
+#slider-page .rsUni, .rsUni .rsOverflow, .rsUni .rsSlide, .rsUni .rsVideoFrameHolder, .rsUni .rsThumbs {
+    background: none!important;
+}
+
+#slider-page .royalSlider{
+    width: 710px!important;
+}
+
+#slider-page .rsNav{
+    margin: 400px 20px 0 20px;
+    width: 20px;
+}
+
+#slider-page .rsNav .rsBullet span{
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background: url('pics/pag-bg.png') no-repeat;
+}
+
+#slider-page .rsNav .rsNavSelected span{
+    background: url('pics/pag-active-bg.png') no-repeat;
+}
+
+#slider-page .rsOverflow{
+    width: 650px!important;
+}
+
+#slider-page .rsOverflow img{
+    float: right;
+}
+
+#slider-page .rsSBlock, #slider-page .rsABlock{
+    background: url('pics/body-bg.png') repeat;
+}
+
+#slider-page .rsABlock, #slider-page .rsPicContent{
+    padding: 5px 0 0 25px;
+    background: none;
+    height: 140px;
+}
+
+#slider-page .rsABlock h2, #slider-page .rsPicContent h2{
+    color: #fcf8f8;
+    font-weight: normal;
+    font-size: 35px;
+}
+
+#slider-page .rsABlock p, #slider-page .rsPicContent p{
+    color: #ff1d25;
+    font-size: 16px;
+}
+
+#slider-page .rsSBlock .rsContactContent h2{
+    color: #fcf8f8;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+#slider-page .rsSBlock .rsContactContent h3{
+    color: #fcf8f8;
+    font-weight: normal;
+    font-size: 35px;
+    width: auto;
+    float: left;
+}
+
+#slider-page .rsSBlock .rsContactContent p{
+    color: #ff1d25;
+    font-size: 14px;
+}
+
+#slider-page .rsSBlock .rsContactContent img{
+    width: 106px;
+    height: 122px;
+    border: 1px solid #d41d25;
+    float: left;
+    margin-right: 10px;
+}
+
+#slider-page .rsSBlock .rsContactContent .attain{
+    float: left;
+    padding: 5px 0 10px 10px;
+}
+
+#slider-page .rsSBlock .rsContactContent .attain p{
+    color: #979796;
+    width: 250px;
+}
+
+#slider-page .rsSBlock .rsContactContent .attain p a{
+    color: #979796;
+    text-decoration: none;
+}
+
+#slider-page .rsSBlock .rsContactContent .attain p a:hover{
+    color: #fff;
+}
+
+#slider-page .rsSBlock .rsContactContent #ashAndNew{
+    width: 415px;
+    margin: 65px 0 0 120px;
+}
+
+#slider-page .rsSBlock .rsContactContent #ashley{
+    height: 178px;
+    background: url('pics/ashley-bg.png') no-repeat center;
+    padding-top: 50px;
+    margin: 30px 0;
+}
+
+/*  content slider  */
+#content-slider{
+    width: 650px;
+    height: 140px;
+    margin-left: 60px;
+    margin-top: -260px;
+    position: relative;
+    background: url('pics/body-bg.png') repeat;
+    z-index: 200;
+}
+
+.contact-us #content-slider{
+    display: none;
+}
+
+#content-slider-bg-holder{
+    width: 100%;
+    height: 100%;
+    background: url('pics/pic-content-bg.png') no-repeat;
+}
+
+#content-slider .rsContent{
+    width: 630px;
+    height: 120px;
+}
+
+#content-slider .rsOverflow{
+    position: absolute!important;
+}
+
+#content-slider .rsNav{
+    display: none;
+}
+
+/* placeholder */
+::-webkit-input-placeholder {
+    color: #fcf8f8;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+input:focus::-webkit-input-placeholder {
+    color:transparent;
+}
+
+:-moz-placeholder {
+    color: #fcf8f8;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+input:focus:-moz-placeholder {
+    color:transparent;
+}
+
+::-moz-placeholder {
+    color: #fcf8f8;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+input:focus::-moz-placeholder{
+    color:transparent;
+}
+
+:-ms-input-placeholder {
+    color: #fcf8f8;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+input:focus:-ms-input-placeholder{
+    color:transparent;
+}
+
+/* page header */
+#page-header{
+    width: 710px;
+    height: 60px;
+    background: #d41d25 url('pics/page-header-bg.png') no-repeat left top;
+    line-height: 60px;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+}
+
+#page-header h1{
+    color: #fcf8f8;
+    font-weight: normal;
+}
+
+#page-header-topbar{
+    top: 60px;
+    margin-left: 60px;
+    height: 10px;
+    width: 650px;
+    float: right;
+    position: fixed;
+    background: url('pics/tours-content-bg.png') no-repeat center top;
+    z-index: 2;
+}
+
+/* account page */
+#account-page{
+    background: #fcf8f8;
+    margin-left: 60px;
+    padding-top: 150px;
+}
+
+#account-page .title{
+    width: 600px;
+    height: 60px;
+    line-height: 60px;
+    background: #d41d25;
+    padding-left: 50px;
+}
+
+#account-page .title h2{
+    font-weight: normal;
+    color: #fcf8f8;
+}
+
+#account-page input{
+    width: 280px;
+    height: 40px;
+    background: none;
+    padding: 0 60px;
+}
+
+#account-page .button{
+    width: 650px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    background: #d41d25 url('pics/acc-button-bg.png') no-repeat;
+    color: #fcf8f8;
+    -webkit-transition : all 0.2s linear;
+    -moz-transition : all 0.2s linear;
+    -ms-transition : all 0.2s linear;
+    -o-transition : all 0.2s linear;
+    transition : all 0.2s linear;
+}
+
+#account-page .button:hover, #account-page .button.active{
+    background: #d41d25 url('pics/acc-button-active-bg.png') no-repeat;
+    color: #000;
+}
+
+#account-page table{
+    width: 650px;
+    border-spacing:0;
+    border-collapse:collapse;
+}
+
+#account-page table tr{
+    height: 40px;
+    line-height: 40px;
+}
+
+#account-page table tr td.r0{
+    background: #e3dfdf;
+}
+
+#account-page table tr td.r1{
+    background: #a9a3a3;
+}
+
+#account-page table tr td#d0{
+    width: 145px;
+    border-right: 15px solid #fcf8f8;
+    padding: 0 30px 0 60px;
+}
+
+#account-page table tr td#d1{
+    width: 400px;
+}
+
+#account-page .message{
+    width: 650px;
+    height: 100px;
+    text-align: center;
+    color: #d41d25;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* tours page */
+#tours-header{
+    height: 60px;
+    width: 710px;
+    background: #d41d25 url('pics/tours-header-bg.png') no-repeat left top;
+    position: fixed;
+    z-index: 2;
+}
+
+#tours-header ul{
+    list-style: none;
+    line-height: 60px;
+    margin-left: 60px;
+}
+
+#tours-header ul li{
+    float: left;
+    width: 215px;
+}
+
+#tours-header ul li p{
+    color: #fcf8f8;
+    float: left;
+}
+
+#tours-header ul li .warrow{
+    background: url('pics/warrow-bg.png') no-repeat;
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin: 25px 0 0 30px;
+    cursor: pointer;
+}
+
+#tours-header ul li .warrow:hover{
+    opacity: 0.7;
+}
+
+#tours-header ul li .seasons-content{
+    margin-left: 80px;
+}
+
+#tours-header ul li .holiday-content{
+    margin-left: 25px;
+}
+
+#tours-header .tours-drop{
+    width: 175px;
+    height: auto;
+    position: absolute;
+    background: #d41d25 url('pics/tours-content-bg.png') no-repeat center top;
+    opacity: 0.9;
+    padding: 10px 0;
+    border: 1px solid #fcf8f8;
+    border-top: 0;
+    -webkit-box-shadow: 0px 5px 9px #acabab;
+    -moz-box-shadow:    0px 5px 9px #acabab;
+    box-shadow:         0px 5px 9px #acabab;
+    color: #fcf8f8;
+}
+
+#tours-header .tours-drop ul{
+    margin: 0;
+}
+
+#tours-header .tours-drop ul li p{
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    max-width: 145px;
+    min-width: 145px;
+    overflow: hidden;
+    text-align: left;
+    padding: 0 15px;
+}
+
+#tours-header .tours-drop ul li p:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#tours-header .tours-drop ul li p.active{
+    color: #000;
+}
+
+#tours-header #season-drop{
+    margin-left: 60px;
+    display: none;
+}
+
+#tours-header #holiday-drop{
+    margin-left: 290px;
+    display: none;
+}
+
+#tours-header .button{
+    cursor: pointer;
+    float: left;
+    width: 30px;
+    height: 20px;
+    margin: 20px 10px;
+}
+
+#tours-header .button:hover{
+    opacity: 0.5;
+}
+
+#tours-header .button-norm{
+    background: url('pics/norm-bg.png') no-repeat;
+    margin-left: 70px;
+}
+
+#tours-header .button-list{
+    background: url('pics/list-bg.png') no-repeat;
+}
+
+#tours-topbar{
+    top: 60px;
+    margin-left: 60px;
+    height: 10px;
+    width: 650px;
+    float: right;
+    position: fixed;
+    background: url('pics/tours-content-bg.png') no-repeat center top;
+    z-index: 2;
+}
+
+#tours-page{
+    margin-top: 60px;
+    background: #fcf8f8;
+    padding: 20px 0;
+    margin-left: 60px;
+    z-index: 1;
+}
+
+#tours-page ul{
+    list-style: none;
+}
+
+#tours-page .wp-pagenavi{
+    text-align: center;
+    border-top: 1px solid #626060;
+    border-left: 1px solid #b5b3b3;
+    border-right: 1px solid #b5b3b3;
+    margin: 0 40px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    height: 26px;
+    line-height: 26px;
+    background:url('pics/pagination-bg.png') repeat-x;
+}
+
+#tours-page .wp-pagenavi.top{
+    margin-bottom: 10px;
+}
+
+#tours-page .wp-pagenavi.bottom{
+    margin-top: 10px;
+}
+
+#tours-page .wp-pagenavi a{
+    text-decoration: none;
+    color: #d41d25;
+    width: 25px;
+}
+
+#tours-page .wp-pagenavi .current{
+    color: #fcf8f8;
+    background: url('pics/paginate-bg.png') no-repeat top center;
+    padding: 1.5px 9px 4px 9px!important;
+}
+
+#tours-page .extend{
+    color: #d41d25;
+}
+
+#tours-page .wp-pagenavi a.page{
+    padding: 0 5px;
+}
+
+#tours-page .wp-pagenavi a.previouspostslink{
+    margin-right: 100px;
+    background: url('pics/prev-bg.png') no-repeat left center;
+    padding-left: 20px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+}
+
+#tours-page .wp-pagenavi a.previouspostslink:hover{
+    background: url('pics/prev-active-bg.png') no-repeat left center;
+}
+
+#tours-page .wp-pagenavi a.nextpostslink{
+    margin-left: 100px;
+    padding-right: 20px;
+    background: url('pics/next-bg.png') no-repeat right center;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+}
+
+#tours-page .wp-pagenavi a.nextpostslink:hover{
+    background: url('pics/next-active-bg.png') no-repeat right center;
+}
+
+#tours-page .wp-pagenavi a.first_link, #tours-page .wp-pagenavi a.last_link{
+    display: none;
+}
+
+#tours-page .tour{
+    width: 650px;
+}
+
+#tours-page .tour .dates-popup{
+    position: absolute;
+    width: 620px;
+    margin-top: -10px;
+    margin-left: 4px;
+    background: #d41d25 url('pics/tours-content-bg.png') no-repeat center top;
+    opacity: 0.9;
+    padding: 10px;
+    border: 1px solid #fcf8f8;
+    -webkit-box-shadow: 0px 0px 9px #acabab;
+    -moz-box-shadow:    0px 0px 9px #acabab;
+    box-shadow:         0px 0px 9px #acabab;
+    color: #fcf8f8;
+    z-index: 100;
+}
+
+#tours-page .tour .dates-popup table{
+    width: 100%;
+}
+
+#tours-page .tour .dates-popup table th{
+    text-align: left;
+}
+
+#tours-page .tour .dates-popup table td{
+    text-transform: uppercase;
+    color: #fcf8f8;
+}
+
+#tours-page .odd{
+    background-image: url('pics/tour-top-bg.png'), url('pics/tour-bottom-bg.png');
+    background-position: center top, center bottom;
+    background-repeat: no-repeat;
+    background-color: #dedbdb;
+}
+
+#tours-page .hidden{
+    display: none;
+}
+
+#tours-page .hiddenimp{
+    display: none!important;
+}
+
+#tours-page .tour-list{
+    padding: 10px 0;
+    /*height: 20px;*/
+    height: auto;
+    position: relative;
+    display: inline-table;
+}
+
+#tours-page .tour-list .thumbnail{
+    display: none;
+}
+
+#tours-page .tour-list .thumbnail{ /*id*/
+    float: left;
+    height: 150px;
+    width: 150px;
+    margin: 0px 10px 0 20px;
+}
+
+#tours-page .tour-list .thumbnail img{ /*id*/
+    padding: 5px 0;
+    background-image: url('pics/slide-top-bg.png'), url('pics/slide-bottom-bg.png');
+    background-position: center top, center bottom;
+    background-repeat: no-repeat;
+}
+
+#tours-page .tour-list .title{
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 360px;
+    overflow: hidden;
+    float: right;
+    margin-right: 110px;
+    color: #d41d25;
+}
+
+#tours-page .tour-list .excerpt{
+    display: none;
+}
+
+#tours-page .tour-list .excerpt{ /*id*/
+    float: left;
+    width: 400px;
+    font-size: 13px;
+    overflow: hidden;
+    height: 150px;
+    max-height: 150px;
+}
+
+#tours-page .tour-list .excerpt ul{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+#tours-page .tour-list .excerpt p, #tours-page .tour-norm .excerpt strong{ /*id*/
+    font-size: 13px;
+}
+
+#tours-page .tour-list .icons{
+    width: 100px;
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+}
+
+#tours-page .tour-list .icons .bell{
+    background: url('pics/bell-bg.png') no-repeat;
+    height: 18px;
+    width: 14px;
+    cursor: pointer;
+    float: left;
+}
+
+#tours-page .tour-list .icons .arrow{
+    background: url('pics/arrow-bg.png') no-repeat;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    float: left;
+    margin-top: 4px;
+    margin-left: 40px;
+}
+
+#tours-page .tour-list .icons .arrow.active{
+    background: url('pics/arrow-up-bg.png') no-repeat;
+}
+
+#tours-page .tour-list .triangle{
+    float: left;
+    width: 10px;
+    height: 10px;
+    background: url('pics/triangle-bg.png') no-repeat;
+    position: absolute;
+    bottom: 0px;
+    left: 200px;
+}
+
+#tours-page .tour-norm{
+    padding: 10px 0;
+    height: 160px;
+    max-height: 160px;
+    overflow: hidden;
+    position: relative;
+}
+
+#tours-page .tour-norm .thumbnail{
+    float: left;
+    height: 150px;
+    width: 150px;
+    margin: 0px 10px 0 20px;
+    display: inline!important;
+}
+
+#tours-page .tour-norm .thumbnail img{
+    padding: 5px 0;
+    background-image: url('pics/slide-top-bg.png'), url('pics/slide-bottom-bg.png');
+    background-position: center top, center bottom;
+    background-repeat: no-repeat;
+}
+
+#tours-page .tour-norm .title{
+    float: left;
+    width: 400px;
+    height: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #d41d25;
+}
+
+#tours-page .tour-norm .excerpt{
+    float: left;
+    width: 400px;
+    height: auto;
+    font-size: 13px;
+    overflow: hidden;
+    display: inline!important;
+}
+
+#tours-page .tour-norm .excerpt ul{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+#tours-page .tour-norm .excerpt p, #tours-page .tour-norm .excerpt strong{
+    font-size: 13px;
+}
+
+#tours-page .tour-norm .icons{
+    float: right;
+    width: 40px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 100px;
+    /*position: absolute;*/
+    /*bottom: 10px;*/
+    /*right: 0;*/
+}
+
+#tours-page .tour-norm .icons .bell{
+    background: url('pics/bell-bg.png') no-repeat;
+    height: 18px;
+    width: 14px;
+    /*margin-top: 80px;*/
+    cursor: pointer;
+}
+
+#tours-page .tour-norm .icons .arrow{
+    background: url('pics/arrow-bg.png') no-repeat;
+    width: 10px;
+    height: 10px;
+    margin-top: 10px;
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+#tours-page .tour-norm .icons .arrow.active{
+    background: url('pics/arrow-up-bg.png') no-repeat;
+}
+
+#tours-page .bell:hover, #tours-page .arrow:hover{
+    opacity: 0.7;
+}
+
+#tours-page .tour-norm .triangle{
+    float: left;
+    width: 10px;
+    height: 10px;
+    background: url('pics/triangle-bg.png') no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+}
+
+.gradient {
+    filter: none;
+}
+
+#tours-page .tour-content{
+    width: 650px;
+    float: left;
+    background: #d41d25;
+    padding-bottom: 20px;
+
+    -webkit-box-shadow: inset 0px 0px 10px #000000;
+    -moz-box-shadow: inset 0px 0px 10px #000000;
+    box-shadow:inset 0px 0px 10px #000000;
+
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#aa191f), to(#d41d25));
+    background: -webkit-linear-gradient(top, #d41d25, #aa191f);
+    background: -moz-linear-gradient(top, #d41d25, #aa191f);
+    background: -ms-linear-gradient(top, #d41d25, #aa191f);
+    background: -o-linear-gradient(top, #d41d25, #aa191f);
+
+}
+
+#tours-page .tour-content h2{
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #fcf8f8;
+    padding: 10px 20px 10px 25px;
+    display: block;
+    float: left;
+}
+
+#tours-page .tour-content .dates .hmessage{
+    padding-top: 7px;
+}
+
+#tours-page .tour-content .dates .hmessage p{
+    margin-bottom: 5px!important;
+}
+
+#tours-page .tour-content .dates p{
+    color: #800808;
+    font-size: 10px;
+    float: left;
+}
+
+#tours-page .tour-content .dates .belli{
+    width: 14px;
+    height: 18px;
+    background: url('pics/bell-bg.png') no-repeat;
+    float: left;
+    margin: 0px 5px 0 5px;
+}
+
+#tours-page .tour-content .dates table{
+    margin: 0 auto;
+}
+
+#tours-page .tour-content .dates table th{
+    text-align: left;
+    font-size: 16px;
+}
+
+#tours-page .tour-content .dates table td{
+    color: #fff;
+    font-size: 16px;
+}
+
+#tours-page .tour-content .dates table td.time{
+    min-width: 110px;
+    padding-right: 20px;
+}
+
+#tours-page .tour-content .dates table td.state{
+    min-width: 110px;
+    padding-right: 20px;
+    text-transform: uppercase;
+}
+
+#tours-page .tour-content .dates table td .bell{
+    width: 14px;
+    height: 18px;
+    background: url('pics/bell-bg.png') no-repeat;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+#tours-page .tour-content .dates .xlsData{
+    display: none;
+}
+
+#tours-page .tour-content .documents .selector{
+    text-align: center;
+    font-weight: bold;
+}
+
+#tours-page .tour-content .documents .selector a{
+    font-size: 13px;
+    text-decoration: none;
+}
+
+#tours-page .tour-content .documents .selector a:hover, #tours-page .tour-content .documents .selector a.active{
+    color: #fff;
+}
+
+#tours-page .tour-content .documents .icons{
+    width: 315px;
+    height: 65px;
+    margin: 20px auto 0 auto;
+}
+
+#tours-page .tour-content .documents .icons div{
+    width: 65px;
+    height: 65px;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+#tours-page .tour-content .documents .icons div:hover{
+    opacity: 0.7;
+}
+
+#tours-page .tour-content .documents .icons div.open{
+    background-image: url('pics/doc-open-bg.png');
+}
+
+#tours-page .tour-content .documents .icons div.download{
+    background-image: url('pics/doc-download-bg.png');
+}
+
+#tours-page .tour-content .documents .icons div.email{
+    background-image: url('pics/doc-mail-bg.png');
+}
+
+#tours-page .tour-content .documents p{
+    display: none;
+    text-align: center;
+    color: #800808;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+#tours-page .tour-content .photos p{
+    text-align: justify;
+    color: #800808;
+    font-size: 10px;
+    margin: 0 30px 10px 30px;
+}
+
+/* my reservations */
+.my-reservations .ownreservations{
+    padding-top: 10px;
+    font-size: 16px!important;
+    font-weight: bold;
+}
+
+/* 404 */
+.pagenotfound{
+    width: 710px;
+    height: 140px;
+    margin-top: 385px;
+    background: #fcf8f8  no-repeat;
+}
+
+.pagenotfound p{
+    font-size: 40px;
+    margin-left: 65px;
+    padding-top: 5px;
+}
+
+/* popup*/
+#backgroundPopup {
+    z-index:5;
+    position: fixed;
+    display:none;
+    min-width: 980px;
+    height:100%;
+    width:100%;
+    background:#000000;
+    top:0px;
+    left:0px;
+    z-index: 1;
+}
+
+#toPopup {
+    background: none repeat scroll 0 0 #fcf8f8;
+    color: #333333;
+    display: none;
+    font-size: 14px;
+    left: 50%;
+    position: fixed;
+    top: 25%;
+    width: 320px;
+    height: 140px;
+    z-index: 10;
+    padding-top: 40px;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow:    0px 0px 10px rgba(0, 0, 0, 0.75);
+    box-shadow:         0px 0px 10px rgba(0, 0, 0, 0.75);
+    z-index: 100;
+}
+
+div#popup_content p{
+    text-align: center;
+    color: #c61a22;
+    font-weight: bold;
+}
+
+div#popup_content button{
+    float: left;
+    margin-top: 30px;
+    background: url('pics/popup-but-bg.png') repeat;
+    width: 159px;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition : all 0.2s linear;
+    -moz-transition : all 0.2s linear;
+    -ms-transition : all 0.2s linear;
+    -o-transition : all 0.2s linear;
+    transition : all 0.2s linear;
+}
+
+div#popup_content button:hover{
+    background: url('pics/popup-button-bg.png');
+}
+
+div#popup_content .separator{
+    margin-top: 30px;
+    width: 2px;
+    height: 60px;
+    float: left;
+    background: url('pics/separator-bg.png');
+}

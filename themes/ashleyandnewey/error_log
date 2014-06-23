@@ -1,0 +1,2 @@
+[14-Aug-2013 07:36:26 UTC] PHP Fatal error:  Call to undefined function get_template_part() in /home/ashley/public_html/wp-content/themes/ashleyandnewey/index.php on line 1
+[14-Aug-2013 07:36:42 UTC] PHP Fatal error:  Call to undefined function get_template_part() in /home/ashley/public_html/wp-content/themes/ashleyandnewey/single.php on line 1

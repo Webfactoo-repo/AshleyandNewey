@@ -1,0 +1,435 @@
+@media all and (max-width: 800px) {
+    .container{
+        min-height: 100%;
+        height: 100%;
+        min-width: 720px;
+        width: 720px;
+        margin: 0 auto;
+        background: none;
+    }
+
+    .main{
+        width: 720px;
+        float: left;
+    }
+
+    /* leftbar */
+    .leftbar{
+        width: 720px;
+        height: 230px!important;
+        min-height: 230px;
+        padding-top: 40px;
+        background: #fcf8f8 url('pics/leftbar-m-bg.png') no-repeat center bottom;
+    }
+
+    .leftbar.logged{
+        background: #fcf8f8;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .leftbar .nav{
+        width: 550px;
+        float: right;
+    }
+
+    .leftbar .nav ul{
+        background: #d41d25 url('pics/nav-ul-m-bg.png') no-repeat center center;
+    }
+
+    .leftbar .nav ul li{
+        width: 274px;
+    }
+
+    .leftbar .nav ul > li:first-child{
+        background: #d41d25 url('pics/nav-ul-left-m-bg.png') no-repeat top left;
+    }
+
+    .leftbar .nav ul > li:last-child{
+        background: #d41d25 url('pics/nav-ul-right-m-bg.png') no-repeat top left;
+    }
+
+    .leftbar .nav ul > li.active:first-child, .leftbar .nav ul > li:first-child:hover{
+        background: #d41d25 url('pics/about-us-hover-m-bg.png') no-repeat;
+    }
+
+    .leftbar .nav ul > li.active:last-child, .leftbar .nav ul > li:last-child:hover{
+        background: #d41d25 url('pics/contact-us-hover-m-bg.png') no-repeat;
+    }
+
+    .leftbar .nav ul li a{
+        text-align: center;
+    }
+
+    .leftbar .login-container{
+        float: right;
+        width: 550px;
+    }
+
+    .leftbar .login #title{
+        margin: 10px 0 10px 0;
+    }
+
+    .leftbar .login #title p{
+        text-align: left;
+    }
+
+    .leftbar .login #username{
+        clear: both;
+        width: 144px;
+        padding: 0 20px;
+        float: left;
+        text-align: center;
+        background: #d41d25 url('pics/username-m-bg.png') no-repeat center bottom;
+    }
+
+    .leftbar .login #password{
+        height: 60px;
+        width: 142px;
+        padding: 0 20px;
+        text-align: center;
+        margin: 0;
+        background: #d41d25 url('pics/password-m-bg.png') no-repeat center bottom;
+    }
+
+    .leftbar .login #ok{
+        margin: 0;
+        height: 60px;
+        width: 184px;
+        background: #d41d25 url('pics/ok-m-bg.png') no-repeat center bottom;
+    }
+
+    .leftbar .login #ok:hover, .leftbar .login #ok.active{
+        background: #d41d25 url('pics/ok-active-m-bg.png') no-repeat;
+    }
+
+    .leftbar .login nav{
+        width: 550px;
+        margin-top: 10px;
+        float: right;
+    }
+
+    .leftbar .login nav ul{
+        margin: 0;
+    }
+
+    .leftbar .login nav ul li a{
+        font-size: 14px;
+    }
+
+    .leftbar .login nav ul em{
+        margin: 2.5px 5px;
+    }
+
+    .leftbar .message{
+        float: right;
+    }
+
+    .leftbar .logo{
+        position: absolute;
+        top: 40px;
+        width: 150px;
+        height: 100px;
+        background: url('pics/logo-m.png') no-repeat right top;
+    }
+
+    .leftbar.logged .logo{
+        top: 50px;
+    }
+
+    .leftbar .information{
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        top: 145px;
+        width: 150px;
+        background: none;
+    }
+
+    .leftbar .information p{
+        font-size: 12px;
+    }
+
+    .leftbar .developed{
+        display: none;
+    }
+
+    .leftbar .logged-nav{
+        width: 550px;
+        float: right;
+    }
+
+    .leftbar .logged-nav ul{
+        float: right;
+        background: url('pics/logged-menu-ul-m-bg.png') no-repeat  right top;
+    }
+
+    .leftbar .logged-nav ul li{
+        width: 275px;
+        float: left;
+        background: none;
+    }
+
+    .leftbar .logged-nav ul li a{
+        background: #d41d25;
+        width: 273px;
+        float: right;
+    }
+
+    .leftbar .logged-nav ul li a:hover, .leftbar .logged-nav ul .active a{
+        background: #d41d25 url('pics/logged-menu-li-m-bg.png') no-repeat;
+    }
+
+    /* basic page */
+    #basic-page .request #reg-input, #basic-page .forgot #for-input{
+        width: 720px;
+        background: #d41d25 url('pics/input-m-bg.png') no-repeat;
+        padding: 0;
+    }
+
+    #basic-page .change #change-input{
+        width: 720px;
+        padding: 0;
+    }
+
+    #basic-page .change #change-input input{
+        width: 290px;
+        padding: 0 30px;
+    }
+
+    #basic-page .request #reg-input input{
+        width: 237.3px;
+        padding: 0;
+    }
+
+    #basic-page .forgot #for-input input{
+        width: 237px;
+        margin-left: 230px;
+        padding: 0 10px;
+    }
+
+    #basic-page .send{
+        width: 720px;
+        background: #d41d25 url('pics/send-m-bg.png') no-repeat;
+    }
+
+    #basic-page .send input{
+        margin-left: 243px;
+        width: 237px;
+        background: #d41d25 url('pics/send-but-m-bg.png') no-repeat;
+    }
+
+    #basic-page .send input:hover, #basic-page .send input.active{
+        background: url('pics/send-active-m-bg.png') no-repeat;
+    }
+
+    #basic-page .basic-content{
+        width: 670px;
+        padding-right: 50px;
+    }
+
+    #basic-page .basic-content #title{
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    #basic-page .basic-content #content{
+        text-align: center;
+    }
+
+    #basic-page .basic-content #content p{
+        text-align: center;
+    }
+
+    /*slider page*/
+    #slider-page .royalSlider{
+        width: 720px!important;
+    }
+
+    #slider-page .rsNav{
+        position: relative;
+        margin: 0;
+        margin-top: -120px;
+        z-index: 1000;
+        width: 720px;
+    }
+
+    #slider-page .rsOverflow{
+        width: 720px!important;
+    }
+
+    #slider-page .rsOverflow img{
+        float: left;
+        margin: 0px!important;
+        margin-top: 1px!important;
+    }
+
+    #slider-page .rsSBlock{
+        width: 700px!important;
+    }
+
+    #slider-page .rsSBlock .rsContactContent img{
+        margin-right: 20px!important;
+        margin-left: 40px!important;
+    }
+
+    #slider-page .rsSBlock .rsContactContent #ashAndNew{
+        margin: 35px 0 0 170px;
+    }
+
+    #slider-page .rsSBlock .rsContactContent #ashley{
+        padding-top: 40px;
+        margin: 20px 0;
+    }
+
+    /*  content slider  */
+    #content-slider{
+        width: 720px;
+        height: 260px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #content-slider .rsABlock{
+        width: 670px!important;
+    }
+
+    /* page header */
+    #page-header{
+        position: absolute;
+        float: right;
+        width: 548px;
+        background: #d41d25;
+        margin-top: 180px;
+        margin-left: 172px;
+    }
+
+    #page-header-topbar{
+        top: 270px;
+        position: absolute;
+    }
+
+    /* account page */
+    #account-page{
+        margin: 0;
+        margin-top: 271px;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #account-page .title{
+        width: 670px;
+    }
+
+    #account-page .button{
+        background: #d41d25 url('pics/acc-button-m-bg.png') no-repeat;
+        width: 720px;
+    }
+
+    #account-page .button:hover, #account-page .button.active{
+        background: #d41d25 url('pics/acc-button-active-m-bg.png') no-repeat;
+    }
+
+    #account-page table{
+        width: 720px;
+    }
+
+    #account-page .message{
+        width: 720px;
+        height: 30px;
+    }
+
+    /* tours page */
+    #tours-header{
+        position: absolute;
+        float: right;
+        width: 548px;
+        margin-left: 172px;
+        margin-top: 180px;
+        background: #d41d25 url('pics/tours-header-m-bg.png') no-repeat left top;
+    }
+
+    #tours-header ul{
+        margin: 0;
+    }
+
+    #tours-header ul li{
+        width: 182px;
+    }
+
+    #tours-header ul li .warrow{
+        margin: 25px 0 0 15px;
+    }
+
+    #tours-header ul li .seasons-content{
+        margin-left: 55px;
+    }
+
+    #tours-header ul li .holiday-content{
+        margin-left: 15px;
+    }
+
+    #tours-header .tours-drop{
+        z-index: 100;
+    }
+
+    #tours-header #season-drop{
+        margin-left: 3px;
+    }
+
+    #tours-header #holiday-drop{
+        margin-left: 185px;
+    }
+
+    #tours-header .button-norm{
+        margin-left: 55px;
+    }
+
+    #tours-topbar{
+        top: 270px;
+        z-index: 1;
+        position: absolute;
+    }
+
+    #tours-page {
+        margin-top: 271px;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    #tours-page .tour{
+        width: 720px;
+    }
+
+    #tours-page .tour .dates-popup{
+        width: 690px;
+    }
+
+    #tours-page .tour-content{
+        width: 720px;
+    }
+
+    #tours-page .tour-list .thumbnail{
+        margin-left: 40px;
+    }
+
+    #tours-page .tour-norm .thumbnail{
+        margin-left: 40px;
+    }
+
+    /* popup*/
+    #backgroundPopup{
+        min-width: 720px;
+    }
+
+    #toPopup{
+        top: 370px;
+        left: 200px;
+    }
+}
+
+@media all and (max-width: 720px) {
+    body{
+        zoom: 0.6;
+    }
+}
