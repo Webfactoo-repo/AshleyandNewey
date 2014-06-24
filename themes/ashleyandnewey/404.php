@@ -1,1 +1,1 @@
-<?php get_template_part('templates/content', '404'); ?>
+<?php get_template_part('templates/content', '404');  ?>
