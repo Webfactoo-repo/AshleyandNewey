@@ -1,6 +1,6 @@
 <?php
 
-$filename = "http://www.ashleynewey.co.uk/assets/".$_GET['url'];
+$filename = $_GET['url'];
 
 header('Content-disposition: attachment; filename='.basename($filename));
 //    header("Content-type: ".mime_content_type(basename($filename)));
