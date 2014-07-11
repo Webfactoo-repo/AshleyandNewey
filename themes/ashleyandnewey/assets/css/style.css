@@ -1150,8 +1150,8 @@ input:focus:-ms-input-placeholder{
 
 #tours-page .tour-norm .icons .arrow{
     background: url('pics/arrow-bg.png') no-repeat;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 25px;
     margin-top: 10px;
     margin-left: 2px;
     cursor: pointer;
